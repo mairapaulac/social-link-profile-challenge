@@ -102,6 +102,12 @@ h1 {
         width: 90%; 
         max-width: none; 
     }
+
+    .box:hover {
+        background-color: hsl(75, 94%, 57%);
+        cursor: pointer;
+        color: hsl(0, 0%, 8%);
+    }
 }
 
 @media (max-width: 768px) {
@@ -113,6 +119,12 @@ h1 {
     .box {
         width: 90%; 
         max-width: none; 
+    }
+
+    .box:hover {
+        background-color: hsl(75, 94%, 57%);
+        cursor: pointer;
+        color: hsl(0, 0%, 8%);
     }
 }
 
@@ -137,5 +149,11 @@ h1 {
     .box {
         height: 45px; 
         font-size: 14px; 
+    }
+
+    .box:hover {
+        background-color: hsl(75, 94%, 57%);
+        cursor: pointer;
+        color: hsl(0, 0%, 8%);
     }
 }
