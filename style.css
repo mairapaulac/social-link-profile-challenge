@@ -91,44 +91,13 @@ h1 {
     color: hsl(0, 0%, 8%);
 }
 
-/*Responsividade */
-@media (max-width: 1024px) {
-    #social {
-        width: 90%; 
-        padding: 15px; 
-    }
-
-    .box {
-        width: 90%; 
-        max-width: none; 
-    }
-
-    .box:hover {
-        background-color: hsl(75, 94%, 57%);
-        cursor: pointer;
-        color: hsl(0, 0%, 8%);
-    }
-}
-
-@media (max-width: 768px) {
-    #social {
-        width: 90%; 
-        padding: 15px; 
-    }
-
-    .box {
-        width: 90%; 
-        max-width: none; 
-    }
-
-    .box:hover {
-        background-color: hsl(75, 94%, 57%);
-        cursor: pointer;
-        color: hsl(0, 0%, 8%);
-    }
-}
-
+/* Remover hover quando clicado (responsividade) */
 @media (max-width: 480px) {
+    .box:active {
+        background-color: hsl(0, 0%, 20%);
+        color: hsl(0, 0%, 100%);
+    }
+
     #info img {
         width: 60px; 
         height: 60px;
@@ -149,11 +118,5 @@ h1 {
     .box {
         height: 45px; 
         font-size: 14px; 
-    }
-
-    .box:hover {
-        background-color: hsl(75, 94%, 57%);
-        cursor: pointer;
-        color: hsl(0, 0%, 8%);
     }
 }
