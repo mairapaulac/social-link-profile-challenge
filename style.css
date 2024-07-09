@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    width: 100%;
+
+}
+
+#social {
+    display: flex;
+    flex-direction: column;
+    margin: 45px auto;
+    background-color: hsl(0, 0%, 12%);
+    width: 450px;
+    height: 650px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column; /* O padrão é row, então fica parecendo uma linha. Precisamos especificar isso aqui */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center;
+}
+
+#info img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.main-title {
+    color: hsl(75, 94%, 57%);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.description {
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    background-color: hsl(0, 0%, 20%);
+    width: 400px;
+    height: 50px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza o texto verticalmente */
+    transition: all 0.5s;
+}
+
+.box:hover {
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
+}
+
+
+/*Responsividade */
+@media (max-width: 768px) {
+    #social {
+        width: 90%; 
+        padding: 15px; 
+    }
+
+    .box {
+        width: 90%; 
+        max-width: none; 
+    }
+}
+
+@media (max-width: 480px) {
+    #info img {
+        width: 60px; 
+        height: 60px;
+    }
+
+    .description {
+        font-size: 12px; 
+    }
+
+    h1 {
+        font-size: 18px; 
+    }
+
+    .main-title {
+        font-size: 16px; 
+    }
+
+    .box {
+        height: 45px; 
+        font-size: 14px; 
+    }
+}
