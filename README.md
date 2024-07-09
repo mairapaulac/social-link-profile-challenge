@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Site URL: [Add live site URL here](https://social-link-profile-challenge.vercel.app)
+- Site URL: [Social Links](https://social-link-profile-challenge.vercel.app)
 
 ## My process
 
